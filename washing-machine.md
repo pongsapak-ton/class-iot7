@@ -41,9 +41,9 @@ Payload: {
 
 ## Set geo-location or location placement
 ```
-Topic: v1cdti/hw/get/6310301020/model-01/WSH-SN001
+Topic: v1cdti/hw/set/6310301020/model-01/WSH-SN001
 Payload: {
-    "action"    : "get",
+    "action"    : "set",
     "project"   : "6310301020",
     "model"     : "model-01",
     "serial"    : "WSH-002",
@@ -78,12 +78,13 @@ Payload: {
 
 ## Set machie status to "maint" to indicate this machine need to be maintenance.
 ```
-Topic: v1cdti/hw/get/6310301020/model-01/WSH-SN001
+Topic: v1cdti/hw/set/6310301020/model-01/WSH-SN001
 Payload: {
-    "action"    : "monitor",
+    "action"    : "set",
     "project"   : "6310301020",
     "model"     : "model-01",
     "serial"    : "WSH-002",
     "name"      : "status",
     "value"     : "maint"
+}
 ```
